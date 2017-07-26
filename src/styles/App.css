@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+header {
+  background: linear-gradient(#FFFFFF, #C5DCE5, #FFFFFF);
+  height: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+h1 {
+  margin: 0;
+  padding: 10px;
+}
+.linkBox {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  font-size: 1.5em;
+}
+.linkBox > a {
+  padding: 0 20px;
+}
+
+.first {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  background-color: white;
+  color: black;
+  order: 1;
+}
+.second {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid lightgray;
+  background-color: gray;
+  color: white;
+  order: 2;
+}
+.third {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid gray;
+  background-color: #333333;
+  color: lightgray;
+  order: 3;
+}
