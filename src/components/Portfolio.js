@@ -10,7 +10,7 @@ class Portfolio extends Component {
       <div>
         <div>
           <p>You can find a lot in <a href="https://github.com/jason-tuttle">my GitHub</a> repositories:</p>
-          <img src={game} alt='game of life simulation' />
+          <img src={game} style={{width: '40vw'}} alt='game of life simulation' />
         </div>
 
       </div>

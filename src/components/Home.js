@@ -34,7 +34,7 @@ class Home extends Component {
             <img className='fg-img' src={familyBg} id="dad-fg" alt='family'/>
           </div>
 
-        <h2>What do <em>you</em> want to do today?</h2>
+        <h3>What do <em>you</em> want to do today?</h3>
       </div>
     );
   }

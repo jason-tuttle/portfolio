@@ -69,7 +69,9 @@ h1 {
   visibility: visible;
   -moz-transition: visibility 1s ease-in-out;
   -webkit-transition: visibility 1s ease-in-out;
-  transition: visibility 1s ease-in-out;
+  transition-property: visibility;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
 .fg-img:hover {
   visibility: hidden;
