@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import game from '../images/game_of_life.png';
 import rover from '../images/mars_rover.png';
 

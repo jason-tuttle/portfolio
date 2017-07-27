@@ -9,12 +9,12 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename='/portfolio-app'>
     <BaseLayout>
       <Switch>
-        <Route exact path="/portfolio-app/" component={Home} />
-        <Route path="/portfolio-app/about" component={About}/>
-        <Route path="/portfolio-app/portfolio" component={Portfolio}/>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About}/>
+        <Route path="/portfolio" component={Portfolio}/>
       </Switch>
     </BaseLayout>
   </BrowserRouter>
