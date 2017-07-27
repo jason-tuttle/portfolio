@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
+import game from '../images/game_of_life.png';
+
 
 class Portfolio extends Component {
 
   render() {
     ;
     return (
-      <div>Portfolio Component</div>
+      <div>
+        <div>
+          <p>You can find a lot in <a href="https://github.com/jason-tuttle">my GitHub</a> repositories:</p>
+          <img src={game} alt='game of life simulation' />
+        </div>
+
+      </div>
     );
   }
 }
