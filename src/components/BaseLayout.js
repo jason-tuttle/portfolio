@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../styles/App.css';
 
 
@@ -29,9 +29,9 @@ class BaseLayout extends Component {
         <header>
 
           <div className='linkBox'>
-            <Link to="/" onClick={this.handleClick} className={styles[location][0]} name='home'>Home</Link>
-            <Link to="/about" onClick={this.handleClick} className={styles[location][1]} name='about'>About</Link>
-            <Link to="/portfolio" onClick={this.handleClick} className={styles[location][2]} name='portfolio'>Portfolio</Link>
+            <NavLink to="/" onClick={this.handleClick} className={styles[location][0]} name='home'>Home</NavLink>
+            <NavLink to="/about" onClick={this.handleClick} className={styles[location][1]} name='about'>About</NavLink>
+            <NavLink to="/portfolio" onClick={this.handleClick} className={styles[location][2]} name='portfolio'>Portfolio</NavLink>
           </div>
           <h1>Jason Tuttle</h1>
         </header>
