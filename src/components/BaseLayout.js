@@ -11,9 +11,10 @@ class BaseLayout extends Component {
     this.state = {
       location: 'home',
       styles: {
-        home: ['first', 'second', 'third'],
-        about: ['third', 'first', 'second'],
-        portfolio: ['second', 'third', 'first']
+        home: ['first', 'third', 'third', 'third'],
+        about: ['third', 'first', 'third', 'third'],
+        portfolio: ['second', 'third', 'first', 'third'],
+        contact: ['third', 'third', 'third', 'first']
       }
     };
   }
@@ -32,8 +33,10 @@ class BaseLayout extends Component {
             <NavLink to="/" onClick={this.handleClick} className={styles[location][0]} name='home'>Home</NavLink>
             <NavLink to="/about" onClick={this.handleClick} className={styles[location][1]} name='about'>About</NavLink>
             <NavLink to="/portfolio" onClick={this.handleClick} className={styles[location][2]} name='portfolio'>Portfolio</NavLink>
+            <NavLink to="/contact" onClick={this.handleClick} className={styles[location][3]} name='contact'>Contact</NavLink>
           </div>
           <h1>Jason Tuttle</h1>
+          
         </header>
         {this.props.children}
       </div>

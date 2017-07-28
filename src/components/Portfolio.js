@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import game from '../images/game_of_life.png';
-import rover from '../images/mars_rover.png';
+import rover from '../images/mars_rover2.jpg';
 
 class Portfolio extends Component {
 

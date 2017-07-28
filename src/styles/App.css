@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Playfair Display' ,sans-serif;
 }
 header {
   background: linear-gradient(#FFFFFF, #C5DCE5, #FFFFFF);
@@ -8,9 +9,22 @@ header {
   flex-flow: column nowrap;
   justify-content: flex-start;
 }
-h1 {
+h1, h2, h3, h4 {
+  font-family: 'Averia Serif Libre', serif;
   margin: 0;
   padding: 10px;
+}
+h1 {
+  font-size: 4em;
+}
+h2 {
+  font-size: 3em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.5em;
 }
 .linkBox {
   display: flex;
@@ -75,4 +89,8 @@ h1 {
 }
 .fg-img:hover {
   opacity: 0;
+}
+
+ul {
+  list-style: none;
 }

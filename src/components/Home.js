@@ -21,6 +21,7 @@ class Home extends Component {
 
     return (
       <div className="home-container">
+        <h2>is a:</h2>
         <h3>Developer</h3>
           <div className="div-img" style={devBg}>
             <img className='fg-img' src={computerBg} id="dev-fg" alt='laptop computer'/>
