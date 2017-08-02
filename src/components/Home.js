@@ -22,20 +22,20 @@ class Home extends Component {
     return (
       <div className="home-container">
         <h2>is a:</h2>
-        <h3>Developer</h3>
+        <div><h3>Developer</h3>
           <div className="div-img" style={devBg}>
             <img className='fg-img' src={computerBg} id="dev-fg" alt='laptop computer'/>
-          </div>
-        <h3>Audio Guru</h3>
+          </div></div>
+        <div><h3>Audio Guru</h3>
           <div className="div-img" style={audioBg}>
             <img className='fg-img' src={micBg} id="audio-fg" alt='microphone'/>
-          </div>
-        <h3>Dad</h3>
+          </div></div>
+        <div><h3>Dad</h3>
           <div className="div-img" style={dadBg}>
             <img className='fg-img' src={familyBg} id="dad-fg" alt='family'/>
-          </div>
+          </div></div>
 
-        <h3>What do <em>you</em> want to do today?</h3>
+        <h3 className="footer-line">What do <em>you</em> want to do today?</h3>
       </div>
     );
   }
