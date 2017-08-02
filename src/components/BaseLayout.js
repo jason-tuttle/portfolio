@@ -28,7 +28,6 @@ class BaseLayout extends Component {
     return (
       <div className="App">
         <header>
-
           <div className='linkBox'>
             <NavLink to="/" onClick={this.handleClick} className={styles[location][0]} name='home'>Home</NavLink>
             <NavLink to="/about" onClick={this.handleClick} className={styles[location][1]} name='about'>About</NavLink>
@@ -36,7 +35,6 @@ class BaseLayout extends Component {
             <NavLink to="/contact" onClick={this.handleClick} className={styles[location][3]} name='contact'>Contact</NavLink>
           </div>
           <h1>Jason Tuttle</h1>
-          
         </header>
         {this.props.children}
       </div>
