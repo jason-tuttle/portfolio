@@ -12,9 +12,9 @@ class BaseLayout extends Component {
       location: 'home',
       styles: {
         home: ['first', 'third', 'third', 'third'],
-        about: ['third', 'first', 'third', 'third'],
+        about: ['second', 'first', 'third', 'third'],
         portfolio: ['second', 'third', 'first', 'third'],
-        contact: ['third', 'third', 'third', 'first']
+        contact: ['second', 'third', 'third', 'first']
       }
     };
   }
