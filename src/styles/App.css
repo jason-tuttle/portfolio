@@ -13,7 +13,7 @@ header {
 h1, h2, h3, h4 {
   font-family: 'Averia Serif Libre', serif;
   margin: 0;
-  padding: 10px;
+  padding: 10px 0;
 }
 h1 {
   font-size: 60px;
