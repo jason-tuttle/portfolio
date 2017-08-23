@@ -97,6 +97,49 @@ h4 {
 ul {
   list-style: none;
 }
+
+.portfolio-container {
+  width: '80vw';
+  margin:'auto';
+  display: 'flex';
+  flex-flow: 'column nowrap';
+}
+.portfolio-piece {
+  margin: 10px;
+  padding: 15px;
+  text-align: left;
+  display: flex;
+  flex-flow: column;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.portfolio-image {
+  flex: auto;
+  height: 80px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px black;
+}
+.portfolio-description {
+  margin: 0 5px;
+  flex: 1 0 50%;
+}
+.portfolio-links {
+  flex-basis: 30%;
+}
+.contact-piece {
+  margin: 10px auto;
+  width: 75%;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.resume-header {
+  background-color: #ACD;
+}
+
 /* ***************  BEGIN WIDE SCREEN STYLE ******************************** */
 @media (min-width: 1024px) {
   h1 {
@@ -113,6 +156,10 @@ ul {
   }
   .linkBox {
     font-size: 30px;
+  }
+  .linkBox > a {
+    flex: 1 0 auto;
+    padding: 5px 20px;
   }
   .div-img {
     width: 20vw;
@@ -139,5 +186,27 @@ ul {
   }
   .footer-line {
     padding-top: 50px;
+  }
+  .portfolio-container {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  .portfolio-piece {
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-flow: row nowrap;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+  }
+  .portfolio-image {
+    height: 150px;
+    margin-right: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
   }
 }
