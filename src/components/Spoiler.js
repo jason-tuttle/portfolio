@@ -16,6 +16,7 @@ class Spoiler extends Component {
 
   render() {
     const {
+        label = '',
         headerBgColor = 'gray',
         headerColor = 'white',
         maxHeight = '200px',
@@ -24,15 +25,21 @@ class Spoiler extends Component {
       } = this.props;
 
     const animatedStyle = {
+      transform: 'scaleY(1.2)',
+      display: 'block',
+      boxSizing: 'border-box',
       margin: '25px',
       border: bordered ? '1px solid #aaa' : 'none',
       borderRadius: '5px',
       overflow: 'scroll',
-      maxHeight: maxHeight,
+      maxHeight: 'calc(100%)',
       minHeight: '2em',
       transition: 'all 0.25s'
     }
     const animatedStyleClosed = {
+      transform: 'scaleY(1.0)',
+      boxSizing: 'border-box',
+      display: 'block',
       margin: '25px',
       border: bordered ? '1px solid #aaa' : 'none',
       borderRadius: '5px',
@@ -42,7 +49,7 @@ class Spoiler extends Component {
     }
     const headerStyle = {
       zIndex: '10',
-      position: 'sticky',
+      position: 'fixed',
       top: '0px',
       backgroundColor: headerBgColor,
       border: 'none',
@@ -65,7 +72,7 @@ class Spoiler extends Component {
     const {open} = this.state;
     return (
       <div style={open ? animatedStyle : animatedStyleClosed} >
-        <button style={headerStyle} onClick={this.toggleDisplay}>{this.props.label}</button>
+        <div style={headerStyle} onClick={this.toggleDisplay}>{label}</div>
         <div style={open ? bodyStyleOpen : bodyStyleClosed}>{this.props.children}</div>
       </div>
     );

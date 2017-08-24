@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Accordion, Icon } from 'semantic-ui-react';
+import Spoiler from './Spoiler';
 
 class About extends Component {
 
@@ -144,6 +145,7 @@ class About extends Component {
             </Accordion.Content>
           </Accordion>
         </div>
+
       </div>
     );
   }
