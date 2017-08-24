@@ -11,7 +11,7 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 
 ReactDOM.render(
-  <BrowserRouter basename='/portfolio-app'>
+  <BrowserRouter >
     <BaseLayout>
       <Switch>
         <Route exact path="/" component={Home} />
